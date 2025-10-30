@@ -6,27 +6,28 @@
       "img": "/images/thumbnails/rabbit-race.png",
       "url": "games/rabbit-race/rabbit-race.js",
       "players": 2,
-      "desc": "Purple Rabbit: 1, Red Rabbit: 2"
+      "desc": "Which rabbit will reach the finish line first?"
     },
     {
       "title": "Yarn Toss",
       "img": "/images/thumbnails/yarn-toss.png",
       "url": "games/yarn-toss/yarn-toss.js",
-      "players": 2,
-      "desc": "Purple Rabbit: 1, Red Rabbit: 2"
+      "players": 4,
+      "desc": "Help the cats pass around a ball of yarn"
     },
     {
       "title": "Trace",
       "img": "/images/thumbnails/trace.png",
       "url": "games/trace/trace.js",
       "players": 1,
-      "desc": "Right: 1, Up: 2"
+      "desc": "Move the ball along line on your screen"
     },
     {
       "title": "Capybara Orange",
       "img": "/images/thumbnails/capybara-orange.png",
       "url": "games/capybara-orange/capybara-orange.js",
-      "players": 1
+      "players": 1,
+      "desc": "Help the capybara collect oranges"
     }
   ]
 }

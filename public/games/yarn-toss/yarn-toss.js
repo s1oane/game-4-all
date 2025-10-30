@@ -18,7 +18,7 @@ function setup() {
   createCanvas(600, 600);
 
   // Initialize two players
-  initializePlayers(2);
+  initializePlayers(4);
 
   // Initialize the ball in the first player's position
   ball = {
@@ -62,11 +62,11 @@ function draw() {
 
 function keyPressed() {
   // Add a new player on space bar if not exceeding maxPlayers
-  if (key === ' ' && players.length < maxPlayers) {
+  if (key === 'a' && players.length < maxPlayers) {
     initializePlayers(players.length + 1);
     return;
   }
-
+1
   // Check if the pressed key matches any player's key
   for (let i = 0; i < players.length; i++) {
     if (key.toUpperCase() === keys[i]) {

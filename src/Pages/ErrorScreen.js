@@ -30,7 +30,7 @@ const ErrorScreen = () => {
     >
       <section id="error-screen">
         <h1 className="header-font beige-font big-font">SORRY!</h1>
-        <hr style={{ borderTop: "4px dashed var(--green)" }} />
+        <hr style={{ borderTop: "0.25rem dashed var(--green)" }} />
         <h2 className="subheader-font red-font">
           our controller is only compatible with laptop/pc
         </h2>

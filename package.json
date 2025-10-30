@@ -1,5 +1,6 @@
 {
   "name": "game-4-all",
+  "homepage": "https://www.game4all.org",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -8,10 +9,14 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
+    "isexe": "^3.1.1",
+    "json-schema-traverse": "^1.0.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.5.3",
     "react-scripts": "5.0.1",
+    "schema-utils": "^4.3.2",
+    "string.prototype.matchall": "^4.0.12",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -37,5 +42,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@typescript-eslint/experimental-utils": "^5.62.0",
+    "@typescript-eslint/utils": "^5.62.0",
+    "rollup": "^2.79.2"
   }
 }

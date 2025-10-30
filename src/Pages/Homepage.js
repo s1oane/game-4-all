@@ -5,6 +5,7 @@ import gameData from "./gameData.json";
 
 function GameCard({ game }) {
   const navigate = useNavigate();
+  const thumbnailSrc = `${process.env.PUBLIC_URL}${game.img}`;
 
   // clicking on a thumbnail will open the game in a new page
   const goToGamePage = () => {
@@ -14,7 +15,7 @@ function GameCard({ game }) {
   // thumbnail for each game
   return (
     <div className="game-card" onClick={goToGamePage}>
-      <img src={game.img} alt={game.title} className="game-thumbnail" />
+      <img src={thumbnailSrc} alt={game.title} className="game-thumbnail" />
     </div>
   );
 }
@@ -42,12 +43,12 @@ function Filters({ playerCount, setPlayerCount }) {
         id="player-filter"
         type="range"
         min="0"
-        max="2"
+        max="4"
         value={playerCount}
         onChange={(e) => setPlayerCount(Number(e.target.value))}
       />
-      <label htmlFor="player-filter">
-        <span id="player-filter-label">
+      <label htmlFor="player-filter" className="blue-font">
+        <span id="player-filter-label" >
           {playerCount > 0 ? playerCount : "#"} {/* display number sign if no filter */}
         </span>{" "}
         Players

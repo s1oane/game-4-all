@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const Header = () => {
+  const navIconSrc = `${process.env.PUBLIC_URL}/images/nav-bar.png`;
+
   return (
     <header className="centered">
       {/* site Title */}
@@ -14,12 +16,12 @@ const Header = () => {
       {/* navigation Menu */}
       <aside className="dropdown">
         <button>
-          <img src="images/nav-bar.png" alt="Navigation Menu" />
+          <img src={navIconSrc} alt="Navigation Menu" />
         </button>
         <nav className="dropdown-content">
-          <div className="beige-font subheader-font medium-font">
+          <div className="red-font subheader-font medium-font">
             <ul>
-              <Link to="/homepage" className="nav-link">
+              <Link to="/" className="nav-link">
                 PLAY
               </Link>
               <br />

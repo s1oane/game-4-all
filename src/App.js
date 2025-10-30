@@ -18,6 +18,7 @@ function App() {
       <Header />
       <ErrorScreen />
       <Routes>
+        <Route path="/" element={<Homepage />} />
         <Route path="/homepage" element={<Homepage />} />
         <Route path="/setup" element={<Setup />} />
         <Route path="/about" element={<About />} />
