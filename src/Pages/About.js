@@ -20,9 +20,9 @@ const About = () => {
           alt="Students collaborating on an accessible controller"
         />
       </figure>
-      <span className="about-badge subheader-font">Our mission</span>
+      <span className="about-badge">Our mission</span>
       <h1 className="extra-big-font subheader-font green-font">
-        MAKING VIDEO GAMES ACCESSIBLE TO EVERYONE
+        MAKING VIDEO GAMES <br></br> ACCESSIBLE TO EVERYONE
       </h1>
       <hr />
       <p id="about-info" className="less-big-font paragraph-font blue-font">

@@ -8,6 +8,7 @@
   --beige: #f7f7ee;
   --darkbeige: #e5e5d3;
   --darkgrey: #767676;
+  --ink: #1f2a3d;
 
   /* Font Sizes */
   --xsmall: 2rem;
@@ -54,6 +55,10 @@ body {
 /* Text Colors */
 .beige-font {
   color: var(--beige);
+}
+
+.black-font {
+  color: var(--ink);
 }
 
 .blue-font {
@@ -326,6 +331,7 @@ header h1 {
   border: 2px solid rgba(128, 191, 255, 0.35);
   max-width: 68rem;
   margin: 2.5rem auto;
+  justify-content: center;
   padding: 6.5rem;
   background: rgba(255, 255, 255, 0.92);
   border-radius: 1.5rem;
@@ -335,7 +341,7 @@ header h1 {
 .instruction {
   gap: 6.25rem;
   margin-bottom: 4rem;
-  padding: 1.25rem;
+  padding: 2rem 5rem;
   border-radius: 0.625rem;
   background-color: none;
   border: px solid var(--darkbeige);
@@ -343,7 +349,7 @@ header h1 {
 
 .instruction img {
   max-width: 31.25rem;
-  max-height: 37.5rem;
+  max-height: 18.5rem;
   width: 4rem;
   height: auto;
   margin: 1rem;
@@ -435,12 +441,15 @@ header h1 {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.4rem 1rem;
+  padding: 0.35rem 1rem;
   border-radius: 999px;
   background: rgba(128, 191, 255, 0.2);
   color: #1f2a3d;
-  font-size: 0.9rem;
   letter-spacing: 0.08em;
+  color: var(--ink);
+  font-size: 0.9rem;
+  letter-spacing: 0.12em;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -562,16 +571,21 @@ header h1 {
   padding: 0.625rem 1.25rem;
   font-size: 1rem;
   font-weight: bold;
-  color: var(--beige);
-  background-color: var(--green);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
   border: none;
-  border-radius: 0.3125rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  background: linear-gradient(135deg, var(--blue), #5fa9ff);
+  color: #0c1530;
+  box-shadow: 0 18px 28px rgba(128, 191, 255, 0.35);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
 }
 
 .contact-form button:hover {
-  background-color: var(--blue);
+  background-color: var(--green);
 }
 
 

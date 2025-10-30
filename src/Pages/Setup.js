@@ -9,7 +9,9 @@ const SetupStep = ({ stepNumber, text, imageSrc, textColor }) => (
       alt={`Step ${stepNumber}`}
     />
     <p className={`${textColor} nextdoor-child medium-font paragraph-font`}>
-      {stepNumber}. {text}
+      <div className="about-badge black-font ">Step {stepNumber}:</div>
+      <br />
+      {text}
     </p>
   </section>
 );
@@ -22,7 +24,7 @@ const Setup = () => {
         <SetupStep
           stepNumber={1}
           text="Plug the console into your device's USB-C port."
-          imageSrc={`${process.env.PUBLIC_URL}/images/setup-visuals/plug-in.jpg`}
+          imageSrc={`${process.env.PUBLIC_URL}/images/setup-visuals/plug-in.png`}
           textColor="red-font"
         />
         <SetupStep
